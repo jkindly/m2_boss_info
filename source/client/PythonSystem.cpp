@@ -13,11 +13,11 @@ bool CPythonSystem::IsWindowed()
 #ifdef BOSS_INFO
 bool CPythonSystem::IsBossInfoExpandend()
 {
-	return m_Config.bPingPktStatus;
+	return m_Config.bIsBossInfoExpandend;
 }
 void CPythonSystem::SetIsBossInfoExpandend(int iFlag)
 {
-	m_Config.bPingPktStatus = iFlag == 1 ? true : false;
+	m_Config.bIsBossInfoExpandend = iFlag == 1 ? true : false;
 }
 #endif	
 
